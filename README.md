@@ -1,35 +1,12 @@
-## Getting Started
+## Web3 Idle Farming Game
 
-Create a project using this example:
+Code-along to the [thirdweb](https://thirdweb.com) [Web3 Idle Farming Game](https://youtu.be/nvtW4-29i9o) tutorial.
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+Deployed on the [Scroll Alpha Testnet](https://scroll.io/alpha). Contract addresses:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Farmer Contract: `0x1AcFdb37bb89642602Fb1047bb59DDc5db413e44`
+- Tools Contract: `0x09599f19F9bec99217d93cD96D21Bf34042869E1`
+- Token Rewards: `0xa9970370Aa32C5cEb2363F76b7E2D09Ebc0813E4`
+- Staking Contract: `0x2e1703a8416F2a7C2Cc8126096436AA087DC1092`
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
-
-### Deploy to IPFS
-
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
-
-## Learn More
-
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+This project was bootstrapped with `npx thirdweb@latest create app` for `EVM` with `Next.js` and `TypeScript`.

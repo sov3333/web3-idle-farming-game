@@ -7,7 +7,7 @@ export function ClaimFarmer() {
     const { contract } = useContract(FARMER_ADDRESS);
     const { data: metadata } = useContractMetadata(contract);
 
-    console.log(metadata)
+    // console.log(metadata)
 
     return (
         <Container maxW={"1200px"}>

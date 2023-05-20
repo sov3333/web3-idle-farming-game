@@ -24,7 +24,7 @@ export default function NFTComponent({ nft }: Props) {
             />
             <Text fontSize={"2xl"} fontWeight={"bold"} my={5} textAlign={"center"}>{nft.metadata.name}</Text>
             {!isLoading && data ? (
-                <Text textAlign={"center"} my={5}>Cost: {ethers.utils.formatEther(data?.price)}{" " + data?.currencyMetadata.symbol}</Text>
+                <Text textAlign={"center"} my={5}>Cost: {Number(ethers.utils.formatEther(data?.price)).toLocaleString("en-US")}{" " + data?.currencyMetadata.symbol}</Text>
             ) : (
                 <Text>Loading...</Text>
             )}

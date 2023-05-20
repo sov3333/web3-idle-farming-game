@@ -46,7 +46,7 @@ export const Equipped = (props: EquippedProps) => {
                     </Flex>
                     <Box mt={5}>
                         <Text>Claimable $CARROT:</Text>
-                        <Text>{ethers.utils.formatUnits(claimableRewards[1], 18)}</Text>
+                        <Text>{Number(ethers.utils.formatUnits(claimableRewards[1], 18)).toLocaleString("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</Text>
                         <Web3Button
                             contractAddress={STAKING_ADDRESS}
                             action={(contract) => contract.call("claimRewards", [props.tokenId])}

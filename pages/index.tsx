@@ -74,7 +74,7 @@ const Home: NextPage = () => {
             <Box>
               <Text fontSize={"small"} fontWeight={"bold"}>$CARROT Balance:</Text>
               {rewardsBalance && (
-                <p>{ethers.utils.formatUnits(rewardsBalance, 18)}</p>
+                <p>{Number(ethers.utils.formatUnits(rewardsBalance, 18)).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
               )}
             </Box>
           </SimpleGrid>
